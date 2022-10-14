@@ -1,8 +1,13 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
+import ReviewsContent from '../components/ReviewsContent';
 
 const Reviews = () => {
   return (
-    <div>Reviews</div>
+    <>
+      <Navbar />
+      <ReviewsContent />
+    </>
   );
 }
 

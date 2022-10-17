@@ -1,3 +1,4 @@
+/* global styles */
 *,
 ::before,
 ::after {
@@ -6,7 +7,8 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+button {
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -19,12 +21,28 @@ h6 {
   text-transform: capitalize;
 }
 
-/* h4,
-h5,
-h6 {
-  color: rgb(141, 140, 140);
-} */
+main {
+  /* background-color: lightcoral; */
+  height: auto;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 200;
+
+  margin-top: 5%;
+
+  border-bottom: 2px solid black;
+  margin-bottom: 1rem;
+}
+
+
+/* navigation styles */
 nav {
   /* background-color: lightblue; */
   position: relative;
@@ -75,26 +93,6 @@ a:hover {
   opacity: 0.3;
 }
 
-main {
-  /* background-color: lightcoral; */
-  height: auto;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  font-size: 3rem;
-  font-weight: 200;
-
-  margin-top: 5%;
-
-  border-bottom: 2px solid black;
-  margin-bottom: 1rem;
-}
-
 @media screen and (max-width: 900px) {
   .title {
     margin-top: 15%;
@@ -106,6 +104,7 @@ main {
   border: none;
   font-size: 1.1rem;
   margin-right: 1rem;
+  margin-top: 1rem;
   margin-bottom: 6rem;
   cursor: pointer;
   text-transform: capitalize;
@@ -156,7 +155,14 @@ article {
   filter: brightness(50%);
 } */
 
-.about-content,
+.about-content {
+  margin-top: 5rem;
+
+  /* 0000000000000000000000000000000000000000000000000000000000 */
+  width: 1000px;
+  max-width: 500px;
+}
+
 .review-content {
   margin-top: 3rem;
 
@@ -184,3 +190,24 @@ article {
   width: 25px;
   height: 25px;
 }
+
+.arrow-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.review-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.bg {
+  background-repeat:"no-repeat";
+  background-size:"cover";
+  height:"100vh";
+  width:"auto";
+}
+

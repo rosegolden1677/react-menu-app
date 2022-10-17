@@ -5,8 +5,10 @@ import image from '../images/kitchen.jpg';
 const Home = () => {
   return (
     <>
-      <Navbar />
-      {/* <img src={image} alt="kitchen sign" /> */}
+      <body className="bg" style={{ backgroundImage: `url(${image})`, backgroundRepeat:"no-repeat", 
+        backgroundSize:"cover", height:"100vh", width:"auto" }}>
+        <Navbar />
+      </body>
     </>
   );
 }

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import MenuButtons from './MenuButtons';
 import MenuItems from './MenuItems';
-import items from '../data';
+import items from '../data/data';
 
 // use set data structure to get unique values
-const allCategories =['all',...new Set(items.map((item) =>
+const allCategories = ['all',...new Set(items.map((item) =>
  item.category))];
 
 
@@ -29,6 +29,10 @@ const Menu = () => {
   return (
     <main>
       <h3 class="title">Menu</h3>
+
+      {
+        console.log(categories)
+      }
 
       <MenuButtons categories={categories} filterItems={filterItems} />
       <MenuItems items={menuItems} />

@@ -1,24 +1,37 @@
 import React from 'react';
 
 const MenuButtons = ({categories, filterItems}) => {
+
   return (
     <div className='menu-btns'>
-      <button className='filter-btn' onClick={() => 
+      <button onClick={() => 
         filterItems('all')}>
           all
       </button>
-      <button className='filter-btn' onClick={() => 
+      <button onClick={() => 
         filterItems('breakfast')}>
           entrees
       </button> 
-      <button className='filter-btn' onClick={() => 
+      <button onClick={() => 
         filterItems('sides')}>
           sides
       </button> 
-      <button className='filter-btn' onClick={() => 
+      <button onClick={() => 
         filterItems('beverages')}>
           beverages
       </button> 
+
+      {/* {
+        categories.map((category, index) => {
+
+          return (
+            <button key={index} onClick={() => filterItems({category})}>
+              {categories.filter(unique)}
+              {console.log(category)}
+            </button>
+          )
+        })
+      } */}
     </div>
   );
 }

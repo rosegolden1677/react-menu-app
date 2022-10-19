@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
 import { VscChromeClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
@@ -12,7 +12,7 @@ const Navbar = () => {
       {/* <img className="menu-icon" src="menu.png" alt="menu icon" /> */}
       <button className='nav-btn' onClick={() => setDisplay(!display)}>
         {
-          display ? <VscChromeClose className='menu-icon' /> : <AiOutlineMenu className='menu-icon' />
+          display ? <VscChromeClose  className='menu-icon' /> : <AiOutlineMenu className='menu-icon' />
         }
       </button>
       <h3>

@@ -2,7 +2,7 @@ import React from 'react';
 import AboutContent from '../components/AboutContent';
 import Navbar from '../components/Navbar';
 
-const About = () => {
+const About = ({setChangeColor}) => {
   return (
     <>
       <Navbar />

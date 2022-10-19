@@ -44,7 +44,6 @@ main {
 
 /* navigation styles */
 nav {
-  /* background-color: lightblue; */
   position: relative;
   height: 10vh;
 
@@ -57,7 +56,7 @@ nav {
 nav h3,
 .nav-links {
   margin-left: 1rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 200;
 }
 
@@ -111,6 +110,10 @@ a:hover {
 }
 
 .menu-btns button:hover {
+  font-weight: bold;
+}
+
+.active-btn {
   font-weight: bold;
 }
 
@@ -205,9 +208,9 @@ article {
 }
 
 .bg {
+
   background-repeat:"no-repeat";
   background-size:"cover";
   height:"100vh";
-  width:"auto";
 }
 

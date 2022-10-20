@@ -1,7 +1,7 @@
 const reviews = [
   {
     id: 1,
-    img: "/images/dog1.jpg",
+    img: "https://i.postimg.cc/h41c32Cs/dog1.jpg",
     name: "Buddy",
     stars: 5,
     date: "11/24/2021",
@@ -9,7 +9,7 @@ const reviews = [
   },
   {
     id: 2,
-    img: "/images/dog2.jpg",
+    img: "https://i.postimg.cc/tCRp0Fwj/dog2.jpg",
     name: "Daisy",
     stars: 5,
     date: "07/03/2022",
@@ -17,7 +17,7 @@ const reviews = [
   },
   {
     id: 3,
-    img: "/images/dog3.jpg",
+    img: "https://i.postimg.cc/02tx9b1J/dog3.jpg",
     name: "Lucky",
     stars: 5,
     date: "10/20/2022",
@@ -25,7 +25,7 @@ const reviews = [
   },
   {
     id: 4,
-    img: "/images/dog4.jpg",
+    img: "https://i.postimg.cc/kgBCGq7Y/dog4.jpg",
     name: "Princess",
     stars: 5,
     date: "01/12/2019",

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import image from '../background-image/pan.jpg';
+import image from '../images/pan.jpg';
 
 const Home = () => {
   return (

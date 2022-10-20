@@ -28,14 +28,16 @@ const Menu = () => {
 
   return (
     <main>
-      <h3 class="title">Menu</h3>
+      <section>
+        <h3 class="title">Menu</h3>
 
-      {
-        console.log(categories)
-      }
+        {
+          console.log(categories)
+        }
 
-      <MenuButtons categories={categories} filterItems={filterItems} />
-      <MenuItems items={menuItems} />
+        <MenuButtons categories={categories} filterItems={filterItems} />
+        <MenuItems items={menuItems} />
+      </section>
     </main>
   );
 }

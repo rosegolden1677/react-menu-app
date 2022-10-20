@@ -3,7 +3,7 @@ import React from 'react';
 const MenuItems = ({items}) => {
 
   return (
-    <section className='menu-items'>
+    <article className='menu-items'>
 
       {
         // iterate over array of objects
@@ -12,7 +12,7 @@ const MenuItems = ({items}) => {
           const {id, name, price, desc} = menuItem;
 
           return (
-            <article key={id}>
+            <article key={id} className="item">
               <div class="left">
                 <h5>{name}</h5>
                 <p>{desc}</p>
@@ -24,7 +24,7 @@ const MenuItems = ({items}) => {
           )
         })
       }
-    </section>
+    </article>
   );
 }
 

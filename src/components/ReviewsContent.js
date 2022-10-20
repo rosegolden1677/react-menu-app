@@ -26,7 +26,7 @@ const ReviewsContent = () => {
     setIndex(numCheck(index - 1));
   }
 
-  const {id, img, name, stars, date, review} = reviews[index];
+  const {id, img, name, date, review} = reviews[index];
 
   const numOfStars = () => {
     for (let i = 0; i < 5; i++) {
@@ -36,25 +36,27 @@ const ReviewsContent = () => {
 
   return (
     <main key={id}>
-      <h3 className='title'>Reviews</h3>
+      <section>
+        <h3 className='title'>Reviews</h3>
 
-      <img className='profile-img' src={img} alt="dog" />
-        
-      <div className='review-container'>
-        <IoChevronBackOutline className='arrow-icon' onClick={() => previousReview()} />
-        <h4 className='review-name'>{name}</h4>
-        <IoChevronForwardOutline className='arrow-icon' onClick={() => nextReview()} />
-      </div>
-
-      <div className='rating'>
-        {
-          numOfStars()
-        }
-      </div>
-                
-      <p>{date}</p>
+        <img className='profile-img' src={img} alt="dog" />
           
-      <p className='review-content'>{review}</p>
+        <div className='review-container'>
+          <IoChevronBackOutline className='arrow-icon' onClick={() => previousReview()} />
+          <h4 className='review-name'>{name}</h4>
+          <IoChevronForwardOutline className='arrow-icon' onClick={() => nextReview()} />
+        </div>
+
+        <div className='rating'>
+          {
+            numOfStars()
+          }
+        </div>
+                  
+        <p>{date}</p>
+            
+        <p className='review-content'>{review}</p>
+      </section>
     </main>
   );
 }

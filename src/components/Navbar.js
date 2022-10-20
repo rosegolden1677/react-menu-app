@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineMenu } from "react-icons/ai";
 import { VscChromeClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
-  const [display, setDisplay] = useState(true);
+  const [display, setDisplay] = useState(false);
 
   return (
     <nav>

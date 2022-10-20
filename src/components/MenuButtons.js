@@ -3,7 +3,7 @@ import React from 'react';
 const MenuButtons = ({categories, filterItems}) => {
 
   return (
-    <div className='menu-btns'>
+    <article className='menu-btns'>
       <button onClick={() => 
         filterItems('all')}>
           all
@@ -32,7 +32,7 @@ const MenuButtons = ({categories, filterItems}) => {
           )
         })
       } */}
-    </div>
+    </article>
   );
 }
 

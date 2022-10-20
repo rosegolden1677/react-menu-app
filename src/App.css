@@ -31,16 +31,24 @@ main {
   align-items: center;
 }
 
+section {
+  /* background-color: blue; */
+
+  margin-top: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   font-size: 3rem;
   font-weight: 200;
 
-  margin-top: 5%;
-
   border-bottom: 2px solid black;
   margin-bottom: 1rem;
 }
-
 
 /* navigation styles */
 nav {
@@ -58,6 +66,7 @@ nav h3,
   margin-left: 1rem;
   font-size: 2rem;
   font-weight: 200;
+  display: block;
 }
 
 .nav-btn {
@@ -67,6 +76,7 @@ nav h3,
 
 .menu-icon {
   width: 30px;
+  color: black;
   cursor: pointer;
 }
 
@@ -82,29 +92,52 @@ nav h3,
   gap: 0.6rem;
 }
 
+@media screen and (max-width: 250px) {
+  .nav-links {
+    margin-top: 0.7rem;
+    left: 3rem;
+  }
+  a,
+  .title {
+    font-size: 1.5rem;
+  }
+  nav h3 {
+    line-height: 1rem;
+    margin-top: 0.5rem;
+  }
+  .profile-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .menu-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 a {
   text-decoration: none;
   color: black;
 }
 
 a:hover {
-  /* font-weight: bold; */
   opacity: 0.3;
 }
 
 @media screen and (max-width: 900px) {
-  .title {
-    margin-top: 15%;
+  section {
+    margin-top: 10rem;
   }
-}
+} 
 
 .menu-btns button {
   background-color: white;
   border: none;
   font-size: 1.1rem;
+  margin-top: 1.5rem;
   margin-right: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 6rem;
   cursor: pointer;
   text-transform: capitalize;
 }
@@ -118,10 +151,12 @@ a:hover {
 }
 
 .menu-items {
+  margin-top: 4.5rem;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 5rem;
-  margin-bottom: 5%;
+  margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -130,8 +165,9 @@ a:hover {
   }
 }
 
-article {
-  width: 400px;
+.item {
+  /* background-color: blueviolet; */
+  max-width: 400px;
   margin-bottom: 1rem;
 
   display: flex;
@@ -152,25 +188,13 @@ article {
   font-size: 1.2rem;
 }
 
-/* img {
-  max-width: 100%;
-  max-height: 100%;
-  filter: brightness(50%);
-} */
-
 .about-content {
   margin-top: 5rem;
-
-  /* 0000000000000000000000000000000000000000000000000000000000 */
-  width: 1000px;
   max-width: 500px;
 }
 
 .review-content {
   margin-top: 3rem;
-
-  /* 0000000000000000000000000000000000000000000000000000000000 */
-  width: 1000px;
   max-width: 500px;
 }
 
@@ -180,7 +204,7 @@ article {
   border-radius: 50%;
   object-fit: cover;
 
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-bottom: 1rem;
 }
 
@@ -204,11 +228,10 @@ article {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 100%;
 }
 
 .bg {
-
   background-repeat:"no-repeat";
   background-size:"cover";
   height:"100vh";
